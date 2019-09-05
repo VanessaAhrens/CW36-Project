@@ -1,3 +1,15 @@
 .question-screen {
     background-color: aliceblue;
+   }
+
+.invisibleSubmit {
+    visibility: hidden;
+}
+
+.invisibleStart {
+    visibility: hidden;
+}
+
+ul {
+    list-style-type: none;
 }
