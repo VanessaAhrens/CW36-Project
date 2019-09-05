@@ -5,6 +5,9 @@
 .invisibleSubmit {
     visibility: hidden;
 }
+.introduction {
+    background-color: aquamarine;
+}
 
 .invisibleStart {
     visibility: hidden;

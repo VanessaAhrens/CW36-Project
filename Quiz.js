@@ -101,6 +101,8 @@ class NewQuiz {
 }
 // I want, that with click on button "Start" the Div appears. See line 108-110 because it belongs to the onclick fct.
 let myDiv = document.getElementsByClassName("question-screen");
+// same for Introduction DIV shall disappear after "Start"
+let myIntro = document.getElementsByClassName("introduction")
 
 document.getElementById("Start").onclick = function () {
     newQuiz = new NewQuiz(); //Zuweisung eines Objektes in den Constructor wie einen Viking! Parameter bleiben, daher hier leer //
@@ -114,7 +116,8 @@ document.getElementById("Start").onclick = function () {
     document.getElementsByClassName("questions-all")[1].children[2].innerHTML = newQuiz.questions[0].c;
     document.getElementsByClassName("questions-all")[1].children[3].innerHTML = newQuiz.questions[0].d;
     document.getElementById("Start").style.display = "none";
-    document.getElementsByClassName("Introduction").style.display = "none";
+    console.log(document.getElementsByClassName("introduction"));
+    myIntro[0].style.display = "none";
 }
 
 //Prüfung, ob der ausgewählte Wert mit richtiger Anwort übereinstimmt. Dafür erstmal Ausgabe des angeklickten Wertes, die in einer Variablen gespeichert sein soll. Keine Ahnung, ob das geht.See urgent Chapter Getting the current node object DOM Manipulation >> READ and WORK THROUGH//
