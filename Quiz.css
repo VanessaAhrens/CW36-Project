@@ -1,18 +1,18 @@
 .question-screen {
     background-color: aliceblue;
    }
-
 .invisibleSubmit {
     visibility: hidden;
 }
 .introduction {
     background-color: aquamarine;
 }
-
-.invisibleStart {
-    visibility: hidden;
-}
-
 ul {
     list-style-type: none;
+}
+.final {
+    background-color: blanchedalmond;
+}
+.notvisible {
+    visibility: hidden;
 }
