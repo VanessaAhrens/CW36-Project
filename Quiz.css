@@ -16,3 +16,6 @@ ul {
 .notvisible {
     visibility: hidden;
 }
+.result {
+    background-color: blueviolet;
+}
