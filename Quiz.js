@@ -8,92 +8,92 @@ class NewQuiz {
             {
                 q:
                     "Warm-up question: How many season has 'Game of Thrones'?",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "8"
+                a: "6 seasons",
+                b: "8 seasons",
+                c: "4 seasons",
+                d: "11 seasons",
+                answer: "8 seasons"
             },
             {
                 q:
-                    "Question 2 - let´s go for developper: what is the name of a famous TV Serie about the beginning of tech boom in Silicon Prairie of Dallas? Hint: the name bases upon an early computer command '(HCF)'.",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "8"
+                    "Question 2 - let´s go for developper: what is the name of a famous TV Serie about the beginning of tech boom in Silicon Prairie of Dallas? Hint: the name bases upon an early computer command.",
+                a: "console.log",
+                b: "Remove Root",
+                c: "runas /user:administrator cmd",
+                d: "Halt and Catch Fire",
+                answer: "Halt and Catch Fire"
             },
             {
                 q:
-                    "This is question: 3",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "b"
+                    "Question 3: 'Friends' was a hit in 90ies and early 2000ds. What is the name of the café, where the six friends meet in every episode?",
+                a: "Central Park",    
+                b: "Central Perk",
+                c: "Central Café",
+                d: "The Central",
+                answer: "Central Perk"
             },
             {
                 q:
-                    "This is question: 4",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "b"
+                    "Question 4: Crime, Western and Drama is the mixture, which makes 'Longmire' to a successfull serie. It´s story is basing upon...",
+                a: "The novels of Craig Johnson",
+                b: "'Winnetou' of Karl May ",
+                c: "A script of Gary Oldman",
+                d: "A project of HBO to initiate a western revival",
+                answer: "The novels of Craig Johnson"
             },
             {
                 q:
-                    "This is question: 5",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "b"
+                    "Question 5: let´s go a bit into general education. In theatre and film exists a special technique to interact with the audience - the breaking of the fourth wall. Which latest TV serie is using this technique frequently? ",
+                a: "Sex and the City",
+                b: "The Good Wife",
+                c: "House of Cards",
+                d: "Dark",
+                answer: "House of Cards"
             },
             {
                 q:
-                    "This is question: 6",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "b"
+                    "Question 6: What is the alias of chemistry teacher Walter in 'Breaking Bad' ",
+                a: "Bohr",
+                b: "Heisenberg",
+                c: "Weisskopf",
+                d: "Weizsäcker",
+                answer: "Heisenberg"
             },
             {
                 q:
-                    "This is question: 7",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "b"
+                    "Question 7: 'Mad Men' is a serie with a huge list of received awards and nominations. The serie, playing in the 60s in Manhattan about daily business of advertising agencies and the personal life of the employees was also criticized due to: ",
+                a: "concealment of history like Corean War",
+                b: "the excessive consumption of alcohol and cigarettes",
+                c: "the high number of nude scenes",
+                d: "violation of animal rights",
+                answer: "the excessive consumption of alcohol and cigarettes"
             },
             {
                 q:
-                    "This is question: 8",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "b"
+                    "Question 8: Kiernan Shipka was already acctress in 'Mad Men' and get soon main actress in a stylish 90s remake about a teenage whitch basing upon a comic serie. The TV serie is called:",
+                a: "The enchanting Whitchcraft-Mysteries",
+                b: "Sabrina the Teenage Witch",
+                c: "Magic, Mystery & Sabrina",
+                d: "The chilling adventures of Sabrina",
+                answer: "The chilling adventures of Sabrina"
             },
             {
                 q:
-                    "This is question: 9",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "b"
+                    "Question 9: The four heroes in 'Stranger Things' are at the beginning of the first episode passionate gamers of: ",
+                a: "Super Mario",
+                b: "Dungeons & Dragons",
+                c: "Pokémon",
+                d: "Pac Man",
+                answer: "Dungeons & Dragons"
             },
             {
                 q:
-                    "This is question: 10",
-                a: "6",
-                b: "8",
-                c: "4",
-                d: "11",
-                answer: "b"
+                    "Question 10: Paolo Sorrentino created in 2016 'The Young Pope' with Jude Law as Pope Pius XIII. Who plays the nun Sister Mary, who raised the pope when he was a child in an orphanage?",
+                a: "Whoopie Goldberg",
+                b: "Jane Fonda",
+                c: "Andie MacDowell",
+                d: "Diane Keaton",
+                answer: "Diane Keaton"
 
             }
         ]
