@@ -104,6 +104,8 @@ let myDiv = document.getElementsByClassName("question-screen");
 // same for Introduction DIV shall disappear after "Start" Es wird aus Einfachheit diese Variable initialisiert, die dann wie der Button verschwindet. Einfacher als Klassen anzulegen.
 let myIntro = document.getElementsByClassName("introduction")
 let myResult = document.getElementsByClassName("final");
+let myResolution = document.getElementsByClassName("result");
+
 document.getElementById("Start").onclick = function () {
     newQuiz = new NewQuiz(); //Zuweisung eines Objektes in den Constructor wie einen Viking! Parameter bleiben, daher hier leer //
     console.log(newQuiz.questions[0].q); //check, was ausgegeben wird: Variable gibt this.questions zurück, 0te Position und da den ersten Value des Properties q1 //
@@ -114,6 +116,9 @@ document.getElementById("Start").onclick = function () {
         console.log(myResult[0])
         myResult[0].setAttribute("class", "notvisible");
         console.log(myResult[0])
+    }
+    if (myResolution[0].getAttribute("class") === "result notvisible") {
+        console.log(myResolution[0]);
     }
     document.getElementsByClassName("questions-all")[0].innerHTML = newQuiz.questions[0].q;                // greift auf <p> Class question-all=[0] zu
     document.getElementsByClassName("questions-all")[1].children[0].innerHTML = newQuiz.questions[0].a;     //greift auf ul Class question-all=[1] ff. zu und gibt aus neWQuiz.aus der property this.question 0te Position aus und da .a Objekt
