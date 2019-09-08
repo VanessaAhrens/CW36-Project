@@ -7,7 +7,7 @@ class NewQuiz {
         this.questions = [
             {
                 q:
-                    "Warm-up question: How many season has 'Game of Thrones'?",
+                    "Warm-up question: How many seasons did 'Game of Thrones' last?",
                 a: "6 seasons",
                 b: "8 seasons",
                 c: "4 seasons",
@@ -16,7 +16,7 @@ class NewQuiz {
             },
             {
                 q:
-                    "Question 2 - let´s go for developper: what is the name of a famous TV Serie about the beginning of tech boom in Silicon Prairie of Dallas? Hint: the name bases upon an early computer command.",
+                    "Question 2 - For developers: What is the name of a famous TV series about the beginning of the 1980s tech boom in Silicon Prairie of Dallas? Hint: The name bases upon an early computer command.",
                 a: "console.log",
                 b: "Remove Root",
                 c: "runas /user:administrator cmd",
@@ -25,7 +25,7 @@ class NewQuiz {
             },
             {
                 q:
-                    "Question 3: 'Friends' was a hit in 90ies and early 2000ds. What is the name of the café, where the six friends meet in every episode?",
+                    "Question 3: 'Friends' was a hit in the 1990s and early 2000s. What is the name of the café where the six friends meet in every episode?",
                 a: "Central Park",    
                 b: "Central Perk",
                 c: "Central Café",
@@ -34,16 +34,16 @@ class NewQuiz {
             },
             {
                 q:
-                    "Question 4: Crime, Western and Drama is the mixture, which makes 'Longmire' to a successfull serie. It´s story is basing upon...",
+                    "Question 4: Crime, Western and Drama is the mixture which makes 'Longmire' a successfull series. It´s story is basing upon...",
                 a: "The novels of Craig Johnson",
                 b: "'Winnetou' of Karl May ",
                 c: "A script of Gary Oldman",
-                d: "A project of HBO to initiate a western revival",
+                d: "A project of HBO to initiate a Western revival",
                 answer: "The novels of Craig Johnson"
             },
             {
                 q:
-                    "Question 5: let´s go a bit into general education. In theatre and film exists a special technique to interact with the audience - the breaking of the fourth wall. Which latest TV serie is using this technique frequently? ",
+                    "Question 5: Let´s go a bit into general education. In theatre and film exists a special technique to interact with the audience - the breaking of the fourth wall. Which latest TV series is using this technique frequently? ",
                 a: "Sex and the City",
                 b: "The Good Wife",
                 c: "House of Cards",
@@ -52,7 +52,7 @@ class NewQuiz {
             },
             {
                 q:
-                    "Question 6: What is the alias of chemistry teacher Walter in 'Breaking Bad' ",
+                    "Question 6: What is the drug kingpin alias of chemistry teacher Walter White in 'Breaking Bad' ",
                 a: "Bohr",
                 b: "Heisenberg",
                 c: "Weisskopf",
@@ -61,25 +61,25 @@ class NewQuiz {
             },
             {
                 q:
-                    "Question 7: 'Mad Men' is a serie with a huge list of received awards and nominations. The serie, playing in the 60s in Manhattan about daily business of advertising agencies and the personal life of the employees was also criticized due to: ",
-                a: "concealment of history like Corean War",
-                b: "the excessive consumption of alcohol and cigarettes",
-                c: "the high number of nude scenes",
-                d: "violation of animal rights",
+                    "Question 7: 'Mad Men' is an award winning series playing in the 1960s in Manhattan. It´s about the daily business of advertising agencies and the personal life of the employees. It was nevertheless also criticized for: ",
+                a: "Concealment of history like Corean War",
+                b: "The excessive consumption of alcohol and cigarettes",
+                c: "The high number of nude scenes",
+                d: "Violation of animal rights",
                 answer: "the excessive consumption of alcohol and cigarettes"
             },
             {
                 q:
-                    "Question 8: Kiernan Shipka was already acctress in 'Mad Men' and get soon main actress in a stylish 90s remake about a teenage whitch basing upon a comic serie. The TV serie is called:",
-                a: "The enchanting Whitchcraft-Mysteries",
+                    "Question 8: Kiernan Shipka already starred in 'Mad Men' and soon became the main actress in a stylish 1990s remake about a teenage witch basing upon a comic series. The TV series is called:",
+                a: "The enchanting Witchcraft-Mysteries",
                 b: "Sabrina the Teenage Witch",
                 c: "Magic, Mystery & Sabrina",
-                d: "The chilling adventures of Sabrina",
-                answer: "The chilling adventures of Sabrina"
+                d: "The Chilling Adventures of Sabrina",
+                answer: "The Chilling Adventures of Sabrina"
             },
             {
                 q:
-                    "Question 9: The four heroes in 'Stranger Things' are at the beginning of the first episode passionate gamers of: ",
+                    "Question 9: The four heroes in 'Stranger Things' are at the beginning of the first season passionate gamers of: ",
                 a: "Super Mario",
                 b: "Dungeons & Dragons",
                 c: "Pokémon",
@@ -88,7 +88,7 @@ class NewQuiz {
             },
             {
                 q:
-                    "Question 10: Paolo Sorrentino created in 2016 'The Young Pope' with Jude Law as Pope Pius XIII. Who plays the nun Sister Mary, who raised the pope when he was a child in an orphanage?",
+                    "Question 10: Paolo Sorrentino created in 2016 'The Young Pope' with Jude Law as Pope Pius XIII. Who plays the nun Sister Mary, who raised the Pope when he was a child in an orphanage?",
                 a: "Whoopie Goldberg",
                 b: "Jane Fonda",
                 c: "Andie MacDowell",
