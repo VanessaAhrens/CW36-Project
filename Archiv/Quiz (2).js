@@ -7,93 +7,93 @@ class NewQuiz {
         this.questions = [
             {
                 q:
-                    "Warm-up question: How many seasons did 'Game of Thrones' last?",
-                a: "6 seasons",
-                b: "8 seasons",
-                c: "4 seasons",
-                d: "11 seasons",
-                answer: "8 seasons"
+                    "Warm-up question: How many season has 'Game of Thrones'?",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "8"
             },
             {
                 q:
-                    "Question 2 - For developers: What is the name of a famous TV series about the beginning of the 1980s tech boom in Silicon Prairie of Dallas? Hint: The name bases upon an early computer command.",
-                a: "console.log",
-                b: "Remove Root",
-                c: "runas /user:administrator cmd",
-                d: "Halt and Catch Fire",
-                answer: "Halt and Catch Fire"
+                    "Question 2 - let´s go for developper: what is the name of a famous TV Serie about the beginning of tech boom in Silicon Prairie of Dallas? Hint: the name bases upon an early computer command '(HCF)'.",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "8"
             },
             {
                 q:
-                    "Question 3: 'Friends' was a hit in the 1990s and early 2000s. What is the name of the café where the six friends meet in every episode?",
-                a: "Central Park",
-                b: "Central Perk",
-                c: "Central Café",
-                d: "The Central",
-                answer: "Central Perk"
+                    "This is question: 3",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "b"
             },
             {
                 q:
-                    "Question 4: Crime, Western and Drama is the mixture which makes 'Longmire' a successfull series. It´s story is basing upon...",
-                a: "The novels of Craig Johnson",
-                b: "'Winnetou' of Karl May ",
-                c: "A script of Gary Oldman",
-                d: "A project of HBO to initiate a Western revival",
-                answer: "The novels of Craig Johnson"
+                    "This is question: 4",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "b"
             },
             {
                 q:
-                    "Question 5: Let´s go a bit into general education. In theatre and film exists a special technique to interact with the audience - the breaking of the fourth wall. Which latest TV series is using this technique frequently? ",
-                a: "Sex and the City",
-                b: "The Good Wife",
-                c: "House of Cards",
-                d: "Dark",
-                answer: "House of Cards"
+                    "This is question: 5",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "b"
             },
             {
                 q:
-                    "Question 6: What is the drug kingpin alias of chemistry teacher Walter White in 'Breaking Bad' ",
-                a: "Bohr",
-                b: "Heisenberg",
-                c: "Weisskopf",
-                d: "Weizsäcker",
-                answer: "Heisenberg"
+                    "This is question: 6",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "b"
             },
             {
                 q:
-                    "Question 7: 'Mad Men' is an award winning series playing in the 1960s in Manhattan. It´s about the daily business of advertising agencies and the personal life of the employees. It was nevertheless also criticized for: ",
-                a: "Concealment of history like Corean War",
-                b: "The excessive consumption of alcohol and cigarettes",
-                c: "The high number of nude scenes",
-                d: "Violation of animal rights",
-                answer: "the excessive consumption of alcohol and cigarettes"
+                    "This is question: 7",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "b"
             },
             {
                 q:
-                    "Question 8: Kiernan Shipka already starred in 'Mad Men' and soon became the main actress in a stylish 1990s remake about a teenage witch basing upon a comic series. The TV series is called:",
-                a: "The enchanting Witchcraft-Mysteries",
-                b: "Sabrina the Teenage Witch",
-                c: "Magic, Mystery & Sabrina",
-                d: "The Chilling Adventures of Sabrina",
-                answer: "The Chilling Adventures of Sabrina"
+                    "This is question: 8",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "b"
             },
             {
                 q:
-                    "Question 9: The four heroes in 'Stranger Things' are at the beginning of the first season passionate gamers of: ",
-                a: "Super Mario",
-                b: "Dungeons & Dragons",
-                c: "Pokémon",
-                d: "Pac Man",
-                answer: "Dungeons & Dragons"
+                    "This is question: 9",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "b"
             },
             {
                 q:
-                    "Question 10: Paolo Sorrentino created in 2016 'The Young Pope' with Jude Law as Pope Pius XIII. Who plays the nun Sister Mary, who raised the Pope when he was a child in an orphanage?",
-                a: "Whoopie Goldberg",
-                b: "Jane Fonda",
-                c: "Andie MacDowell",
-                d: "Diane Keaton",
-                answer: "Diane Keaton"
+                    "This is question: 10",
+                a: "6",
+                b: "8",
+                c: "4",
+                d: "11",
+                answer: "b"
 
             }
         ]
@@ -104,7 +104,7 @@ let myDiv = document.getElementsByClassName("question-screen");
 // same for Introduction DIV shall disappear after "Start" Es wird aus Einfachheit diese Variable initialisiert, die dann wie der Button verschwindet. Einfacher als Klassen anzulegen.
 let myIntro = document.getElementsByClassName("introduction")
 let myResult = document.getElementsByClassName("final");
-let myResolution = document.getElementsByClassName("result notvisible");
+let myResolution = document.getElementsByClassName("result");
 
 document.getElementById("Start").onclick = function () {
     newQuiz = new NewQuiz(); //Zuweisung eines Objektes in den Constructor wie einen Viking! Parameter bleiben, daher hier leer //
@@ -115,6 +115,10 @@ document.getElementById("Start").onclick = function () {
     if (myResult[0].getAttribute("class") === "final notvisible") {
         console.log(myResult[0])
         myResult[0].setAttribute("class", "notvisible");
+        console.log(myResult[0])
+    }
+    if (myResolution[0].getAttribute("class") === "result notvisible") {
+        console.log(myResolution[0]);
     }
     document.getElementsByClassName("questions-all")[0].innerHTML = newQuiz.questions[0].q;                // greift auf <p> Class question-all=[0] zu
     document.getElementsByClassName("questions-all")[1].children[0].innerHTML = newQuiz.questions[0].a;     //greift auf ul Class question-all=[1] ff. zu und gibt aus neWQuiz.aus der property this.question 0te Position aus und da .a Objekt
@@ -146,17 +150,12 @@ for (let i = 0; i < liAnswers.length; i++) {
 
 
 document.getElementById("Submit").onclick = function () {
-    if (newQuiz.questions[0].answer === givenAnswer) { console.log("correct"), newQuiz.playerPoints++ }
+    if (newQuiz.questions[0].answer === givenAnswer) { newQuiz.playerPoints++ }
     else { console.log("wrong") };
-    console.log("check mistake", newQuiz.questions[0].answer)
     console.log("playerpoints: ", newQuiz.playerPoints);
     newQuiz.currentQuestion++;
     console.log("current question: ", newQuiz.currentQuestion);
-    document.getElementsByClassName("question-screen")[0].style.display = "none";
-    document.getElementById("inbetweenScreen").style.display = "block";
-    document.getElementById("answeredquestions").innerHTML = newQuiz.playerPoints; //09.09.2019 füge "answeredquestions" button ein Zähler Frage hinzu
-    document.getElementById("answeredquestions").style.display = "block"; // 09.09.2019 nur sichtbar ab 1. Submit + style setting in html
-    // mit der Einführung des Zwischenergebnis
+    nextQuestion(newQuiz.currentQuestion);
 }
 // nachträglich dazu: wir wollen, dass die nächste Frage angezeigt, also führe die Funktion nextQuestion aus wenn eine Nummer! dazukommt.Invoking Fct nextQuestion by incrementatin current Question
 // merk dir endlich, die Fkt lässt sich einfach durch nextQuestion(zahl) aufrufen  
@@ -164,15 +163,12 @@ document.getElementById("Submit").onclick = function () {
 // nächste Frage hat immer andere Klasse >> wie umgehen ohne den Code zehn mal zu schreiben?
 //diese Funktion geht zur nächsten Frage wenn eine Nummer als Parameter kommt
 
-
-
 function nextQuestion(num) {
     if (newQuiz.currentQuestion >= 10) {
         document.getElementsByClassName("question-screen")[0].style.display = "none";
         document.getElementById("lastScreen").setAttribute("class", "final");
-    }
+        }
     else {
-        document.getElementsByClassName("question-screen")[0].style.display = "block";
         document.getElementsByClassName("questions-all")[0].innerHTML = newQuiz.questions[num].q;
         document.getElementsByClassName("questions-all")[1].children[0].innerHTML = newQuiz.questions[num].a;
         document.getElementsByClassName("questions-all")[1].children[1].innerHTML = newQuiz.questions[num].b;
@@ -181,18 +177,9 @@ function nextQuestion(num) {
     }
 }
 
-// function finalResult(num) {
-//  if (newQuiz.currentQuestion === 10) {document.getElementsByClassName("final")[0]};
-//  console.log("Anzeige", document.getElementsByClassName("final")[0].innerHTML)
-//  }
+  // function finalResult(num) {
+  //  if (newQuiz.currentQuestion === 10) {document.getElementsByClassName("final")[0]};
+  //  console.log("Anzeige", document.getElementsByClassName("final")[0].innerHTML)
+ //  }
 // finalResult(10)
 
-
-document.getElementById("NextQuestion").onclick = function () {
-    document.getElementById("inbetweenScreen").style.display = "none";
-    nextQuestion(newQuiz.currentQuestion);
-}
-// cannot work, because Function nextQuestion has if condition
-function ausgabe(ergebnis) {
-    document.getElementById("inbetweenScreen").innerHTML = (newQuiz.questions[0].answer === givenAnswer)
-};

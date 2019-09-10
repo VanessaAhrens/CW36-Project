@@ -1,11 +1,46 @@
+h1 {
+    text-align: center;
+    font-style: normal; 
+    font-family: monospace;  
+    font-size: 69px;
+    color: #efb758;
+  
+}
+#Start{
+    float: left;
+    font-family: monospace;
+    font-size: 20px;
+    color: #c34129;
+}
+#Submit{
+    float: left;
+    font-family: monospace;
+    font-size: 20px;
+    color: #c34129;
+}
+
 .question-screen {
-    background-color: aliceblue;
+    background-color: #e2dbc9;
+    width: 600px;
+    margin: auto; 
+    float: center;
+    justify-content:center;
+    font-family: monospace;
+    font-size: 20px;
+    color: #c34129;
    }
 .invisibleSubmit {
     visibility: hidden;
 }
 .introduction {
-    background-color: aquamarine;
+    background-color: #e2dbc9;;
+    width: 600px;
+    margin: auto; 
+    float: center;
+    justify-content:center;
+    font-family: monospace;
+    font-size: 20px;
+    color: #c34129
 }
 ul {
     list-style-type: none;
@@ -16,3 +51,38 @@ ul {
 .notvisible {
     visibility: hidden;
 }
+.result {
+    background-color: #e2dbc9;;
+    width: 600px;
+    margin: auto; 
+    float: center;
+    justify-content:center;
+    font-family: monospace;
+    font-size: 20px;
+    color: #c34129
+}
+body {
+    background-image: url("background.png");
+    background-color: #e2dbc9;
+    background-size: auto;
+    width: 90%;
+    height: 50%;
+    margin:0 auto;
+    }
+#NextQuestion {
+    float: left;
+    font-family: monospace;
+    font-size: 20px;
+    color: #c34129;
+}
+#answeredquestions {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: green;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: #e2dbc9;
+    border-color: black;
+    float: right;
+    }
