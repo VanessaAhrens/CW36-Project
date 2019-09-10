@@ -86,3 +86,8 @@ body {
     border-color: black;
     float: right;
     }
+
+    input[type="radio"] {
+        margin-top: -1px;
+        vertical-align: middle;
+        }
