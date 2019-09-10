@@ -116,6 +116,7 @@ document.getElementById("Start").onclick = function () {
         console.log(myResult[0])
         myResult[0].setAttribute("class", "notvisible");
     }
+    
     document.getElementsByClassName("questions-all")[0].innerHTML = newQuiz.questions[0].q;                // greift auf <p> Class question-all=[0] zu
     document.getElementById("answer1").innerHTML = newQuiz.questions[0].a;     //greift auf ul Class question-all=[1] ff. zu und gibt aus neWQuiz.aus der property this.question 0te Position aus und da .a Objekt
     document.getElementById("answer2").innerHTML = newQuiz.questions[0].b;
@@ -174,10 +175,10 @@ function nextQuestion(num) {
     else {
         document.getElementsByClassName("question-screen")[0].style.display = "block";
         document.getElementsByClassName("questions-all")[0].innerHTML = newQuiz.questions[num].q;
-        document.getElementsByClassName("questions-all")[1].children[0].innerHTML = newQuiz.questions[num].a;
-        document.getElementsByClassName("questions-all")[1].children[1].innerHTML = newQuiz.questions[num].b;
-        document.getElementsByClassName("questions-all")[1].children[2].innerHTML = newQuiz.questions[num].c;
-        document.getElementsByClassName("questions-all")[1].children[3].innerHTML = newQuiz.questions[num].d;
+        document.getElementById("answer1").innerHTML = newQuiz.questions[num].a;
+        document.getElementById("answer2").innerHTML = newQuiz.questions[num].b;
+        document.getElementById("answer3").innerHTML = newQuiz.questions[num].c;
+        document.getElementById("answer4").innerHTML = newQuiz.questions[num].d;
     }
 }
 

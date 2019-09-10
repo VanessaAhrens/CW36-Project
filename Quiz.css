@@ -86,8 +86,8 @@ body {
     border-color: black;
     float: right;
     }
-
-    input[type="radio"] {
-        margin-top: -1px;
-        vertical-align: middle;
-        }
+    input[type='radio'], label{   
+        vertical-align: baseline;
+        padding: 10px;
+        margin: 10px;
+     }
