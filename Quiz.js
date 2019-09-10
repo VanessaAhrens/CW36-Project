@@ -135,8 +135,9 @@ let givenAnswer = "";                                                // muss au�
 for (let i = 0; i < liAnswers.length; i++) {
     liAnswers[i].onclick = function (e) {
         console.log(e.currentTarget.innerHTML);
-        console.log("gegebeneAntwort", givenAnswer);
+        console.log("liAnswers", liAnswers[1]);
         givenAnswer = e.currentTarget.innerHTML;
+        console.log("gegebeneAntwort", givenAnswer);
     }
 }
 
@@ -160,7 +161,8 @@ document.getElementById("Submit").onclick = function () {
     document.getElementById("inbetweenScreen").style.display = "block";
     document.getElementById("answeredquestions").innerHTML = newQuiz.currentQuestion; //09.09.2019 f체ge "answeredquestions" button ein Z채hler Frage hinzu
     document.getElementById("answeredquestions").style.display = "block"; // 09.09.2019 nur sichtbar ab 1. Submit + style setting in html
-    // mit der Einf체hrung des Zwischenergebnis
+    document.getElementById("playerpoints").innerHTML = newQuiz.playerPoints;   // mit der Einf체hrung des Zwischenergebnis
+    document.getElementById("playerpoints").style.display = "block";
 }
 // nachtr채glich dazu: wir wollen, dass die n채chste Frage angezeigt, also f체hre die Funktion nextQuestion aus wenn eine Nummer! dazukommt.Invoking Fct nextQuestion by incrementatin current Question
 // merk dir endlich, die Fkt l채sst sich einfach durch nextQuestion(zahl) aufrufen  
