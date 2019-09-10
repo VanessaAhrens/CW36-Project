@@ -116,7 +116,7 @@ document.getElementById("Start").onclick = function () {
         console.log(myResult[0])
         myResult[0].setAttribute("class", "notvisible");
     }
-    
+
     document.getElementsByClassName("questions-all")[0].innerHTML = newQuiz.questions[0].q;                // greift auf <p> Class question-all=[0] zu
     document.getElementById("answer1").innerHTML = newQuiz.questions[0].a;     //greift auf ul Class question-all=[1] ff. zu und gibt aus neWQuiz.aus der property this.question 0te Position aus und da .a Objekt
     document.getElementById("answer2").innerHTML = newQuiz.questions[0].b;
@@ -128,15 +128,18 @@ document.getElementById("Start").onclick = function () {
 }
 
 //Prüfung, ob der ausgewählte Wert mit richtiger Anwort übereinstimmt. Dafür erstmal Ausgabe des angeklickten Wertes, die in einer Variablen gespeichert sein soll. Keine Ahnung, ob das geht.See urgent Chapter Getting the current node object DOM Manipulation >> READ and WORK THROUGH//
-let liAnswers = document.getElementsByTagName('li');
-let givenAnswer = ""; // muss außerhalb der Funktion erklärt werden, damit ich den gespeicherten Wert der Variable außerhalb abrufen kann.
+
+let liAnswers = document.getElementsByClassName("answering");
+let givenAnswer = "";                                                // muss außerhalb der Funktion erklärt werden, damit ich den gespeicherten Wert der Variable außerhalb abrufen kann.
 
 for (let i = 0; i < liAnswers.length; i++) {
     liAnswers[i].onclick = function (e) {
         console.log(e.currentTarget.innerHTML);
+        console.log("gegebeneAntwort", givenAnswer);
         givenAnswer = e.currentTarget.innerHTML;
     }
 }
+
 // Prüfung: ausgewählter Wert = oder != richtige Antwort >> nur Frage 1.
 // let givenAnswer = ""
 // givenAnswer = e.currentTarget.innerHTML;
@@ -155,7 +158,7 @@ document.getElementById("Submit").onclick = function () {
     console.log("current question: ", newQuiz.currentQuestion);
     document.getElementsByClassName("question-screen")[0].style.display = "none";
     document.getElementById("inbetweenScreen").style.display = "block";
-    document.getElementById("answeredquestions").innerHTML = newQuiz.playerPoints; //09.09.2019 füge "answeredquestions" button ein Zähler Frage hinzu
+    document.getElementById("answeredquestions").innerHTML = newQuiz.currentQuestion; //09.09.2019 füge "answeredquestions" button ein Zähler Frage hinzu
     document.getElementById("answeredquestions").style.display = "block"; // 09.09.2019 nur sichtbar ab 1. Submit + style setting in html
     // mit der Einführung des Zwischenergebnis
 }
@@ -194,6 +197,6 @@ document.getElementById("NextQuestion").onclick = function () {
     nextQuestion(newQuiz.currentQuestion);
 }
 // cannot work, because Function nextQuestion has if condition
-function ausgabe(ergebnis) {
-    document.getElementById("inbetweenScreen").innerHTML = (newQuiz.questions[0].answer === givenAnswer)
-};
+//function ausgabe(ergebnis) {
+//    document.getElementById("inbetweenScreen").innerHTML = (newQuiz.questions[0].answer === givenAnswer)
+//};
