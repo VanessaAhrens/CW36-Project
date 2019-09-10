@@ -17,14 +17,15 @@
         <button id="Start">Start the quiz</button>
     </div>
     <div class="question-screen invisibleSubmit">
-        <input type="radio" id="answer1" name="allAnswers">
-        <label for="answer"> </label> 
-        <input type="radio" id="answer2" name="allAnswers">
-        <label for="answer2"> </label> 
-        <input type="radio" id="answer3" name="allAnswers">
-        <label for="answer3"> </label> 
-        <input type="radio" id="answer4" name="allAnswers">
-        <label for="answer4"> </label> 
+        <p class="questions-all"></p>
+        <input type="radio" id="answer1button" name="allAnswers" value="question1"><span id="answer1"> ???
+        </span></input>
+        <input type="radio" id="answer2button" name="allAnswers" value="question2"><span id="answer2"> ???
+        </span></input>
+        <input type="radio" id="answer3button" name="allAnswers" value="question3"><span id="answer3"> ???
+        </span></input>
+        <input type="radio" id="answer4button" name="allAnswers" value="question4"><span id="answer4"> ???
+        </span></input>
         <div>
             <button id="Submit">Submit</button>
         </div>
@@ -35,16 +36,16 @@
             </p>
         </h2>
     </div>
-    <div class = "result" id="inbetweenScreen" style="display: none;">
+    <div class="result" id="inbetweenScreen" style="display: none;">
         <h2>
             <p>Your answer</p>
         </h2>
         <button id="NextQuestion">Next Question</button>
     </div>
     <div>
-        <button id="answeredquestions" style="display:none"; >/correct answers:</button>
+        <button id="answeredquestions" style="display:none" ;>/correct answers:</button>
     </div>
     <script src="./Quiz.js"></script>
 </body>
-</html>
 
+</html>

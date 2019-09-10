@@ -117,10 +117,10 @@ document.getElementById("Start").onclick = function () {
         myResult[0].setAttribute("class", "notvisible");
     }
     document.getElementsByClassName("questions-all")[0].innerHTML = newQuiz.questions[0].q;                // greift auf <p> Class question-all=[0] zu
-    document.getElementById("answer1")[1].children[0].innerHTML = newQuiz.questions[0].a;     //greift auf ul Class question-all=[1] ff. zu und gibt aus neWQuiz.aus der property this.question 0te Position aus und da .a Objekt
-    document.getElementById("answer2")[1].children[1].innerHTML = newQuiz.questions[0].b;
-    document.getElementById("answer3")[1].children[2].innerHTML = newQuiz.questions[0].c;
-    document.getElementById("answer4")[1].children[3].innerHTML = newQuiz.questions[0].d;
+    document.getElementById("answer1").innerHTML = newQuiz.questions[0].a;     //greift auf ul Class question-all=[1] ff. zu und gibt aus neWQuiz.aus der property this.question 0te Position aus und da .a Objekt
+    document.getElementById("answer2").innerHTML = newQuiz.questions[0].b;
+    document.getElementById("answer3").innerHTML = newQuiz.questions[0].c;
+    document.getElementById("answer4").innerHTML = newQuiz.questions[0].d;
     document.getElementById("Start").style.display = "none";
     console.log(document.getElementsByClassName("introduction"));
     myIntro[0].style.display = "none";
