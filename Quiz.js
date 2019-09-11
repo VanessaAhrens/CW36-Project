@@ -149,10 +149,11 @@ for (let i = 0; i < liAnswers.length; i++) {
 // Value aus givenAnswer wird nun mit der richtigen Antwort aus newQuiz verglichen sobald auf Submit geklickt wird. 
 // sobald Submit geklickt wird, soll this.currentQuestion um +1 hochgezählt werden. Wenn das passiert, nächste Frage. 
 
+
 //let truth = (newQuiz.questions[0].answer === givenAnswer);//
 
 document.getElementById("Submit").onclick = function () {
-    if (newQuiz.questions[0].answer === givenAnswer) { console.log("correct"), newQuiz.playerPoints++ }
+    if (newQuiz.questions[0].answer === givenAnswer) { console.log("correct"), newQuiz.playerPoints++ } // {document.getElementById("inbetweenScreen").innerHTML = "This was correct!" , new Quiz.playerPoints++} lead to missing next question button 
     else { console.log("wrong") };
     console.log("check mistake", newQuiz.questions[0].answer)
     console.log("playerpoints: ", newQuiz.playerPoints);
@@ -185,6 +186,7 @@ function nextQuestion(num) {
         document.getElementById("lastScreen").setAttribute("class", "final");
         document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct";
         document.getElementById("playerpoints").style.display = "none";
+        document.getElementById("answeredquestions").style.display = "none";
     }
     else {
         document.getElementsByClassName("question-screen")[0].style.display = "block";
@@ -195,13 +197,6 @@ function nextQuestion(num) {
         document.getElementById("answer4").innerHTML = newQuiz.questions[num].d;
     }
 }
-
-// function finalResult(num) {
-//  if (newQuiz.currentQuestion === 10) {document.getElementsByClassName("final")[0]};
-//  console.log("Anzeige", document.getElementsByClassName("final")[0].innerHTML)
-//  }
-// finalResult(10)
-
 
 document.getElementById("NextQuestion").onclick = function () {
     document.getElementById("inbetweenScreen").style.display = "none";
