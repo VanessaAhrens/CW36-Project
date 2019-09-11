@@ -81,10 +81,10 @@ class NewQuiz {
                 q:
                     "Question 9: The four heroes in 'Stranger Things' are at the beginning of the first season passionate gamers of: ",
                 a: "Super Mario",
-                b: "Dungeons & Dragons",
+                b: "Dungeons and Dragons",
                 c: "Pokémon",
                 d: "Pac Man",
-                answer: "Dungeons & Dragons"
+                answer: "Dungeons and Dragons"
             },
             {
                 q:
@@ -153,9 +153,10 @@ for (let i = 0; i < liAnswers.length; i++) {
 //let truth = (newQuiz.questions[0].answer === givenAnswer);//
 
 document.getElementById("Submit").onclick = function () {
-    if (newQuiz.questions[0].answer === givenAnswer) { document.getElementById("goontonextquestion").innerHTML = "This was correct!" , newQuiz.playerPoints++ } // {document.getElementById("goontonextquestion").innerHTML = "This was correct!" , new Quiz.playerPoints++} lead to missing next question button 
+    if (newQuiz.questions[newQuiz.currentQuestion].answer === givenAnswer) { document.getElementById("goontonextquestion").innerHTML = "This was correct!" , newQuiz.playerPoints++ } // {document.getElementById("goontonextquestion").innerHTML = "This was correct!" , new Quiz.playerPoints++} lead to missing next question button 
     else { document.getElementById("goontonextquestion").innerHTML = "This answer was wrong." };
     console.log("check mistake", newQuiz.questions[0].answer)
+    console.log("checkMariana", newQuiz.currentQuestion);
     console.log("playerpoints: ", newQuiz.playerPoints);
     newQuiz.currentQuestion++;
     console.log("current question: ", newQuiz.currentQuestion);
@@ -165,7 +166,8 @@ document.getElementById("Submit").onclick = function () {
     document.getElementById("answeredquestions").style.display = "block"; // 09.09.2019 nur sichtbar ab 1. Submit + style setting in html
     document.getElementById("playerpoints").innerHTML = newQuiz.playerPoints;   // mit der Einführung des Zwischenergebnis
     document.getElementById("playerpoints").style.display = "block";
-   }
+   
+}
 
 // nachträglich dazu: wir wollen, dass die nächste Frage angezeigt, also führe die Funktion nextQuestion aus wenn eine Nummer! dazukommt.Invoking Fct nextQuestion by incrementatin current Question
 // merk dir endlich, die Fkt lässt sich einfach durch nextQuestion(zahl) aufrufen  
