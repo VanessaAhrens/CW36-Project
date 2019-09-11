@@ -149,6 +149,7 @@ for (let i = 0; i < liAnswers.length; i++) {
 // Value aus givenAnswer wird nun mit der richtigen Antwort aus newQuiz verglichen sobald auf Submit geklickt wird. 
 // sobald Submit geklickt wird, soll this.currentQuestion um +1 hochgezählt werden. Wenn das passiert, nächste Frage. 
 
+//let truth = (newQuiz.questions[0].answer === givenAnswer);//
 
 document.getElementById("Submit").onclick = function () {
     if (newQuiz.questions[0].answer === givenAnswer) { console.log("correct"), newQuiz.playerPoints++ }
@@ -163,7 +164,14 @@ document.getElementById("Submit").onclick = function () {
     document.getElementById("answeredquestions").style.display = "block"; // 09.09.2019 nur sichtbar ab 1. Submit + style setting in html
     document.getElementById("playerpoints").innerHTML = newQuiz.playerPoints;   // mit der Einführung des Zwischenergebnis
     document.getElementById("playerpoints").style.display = "block";
+   // let truth = newQuiz.questions[0].answer;
+   // console.log("rightAnswer", truth);
+   // let check = (truth === givenAnswer);
+   // if (check === true) {
+   // document.getElementById("inbetweenScreen").innerHTML = "This was correct!"} 
+   // else {"This answer was unfortunately wrong."}
 }
+
 // nachträglich dazu: wir wollen, dass die nächste Frage angezeigt, also führe die Funktion nextQuestion aus wenn eine Nummer! dazukommt.Invoking Fct nextQuestion by incrementatin current Question
 // merk dir endlich, die Fkt lässt sich einfach durch nextQuestion(zahl) aufrufen  
 //neue Fkt.: sobald Submit +1 in currentQuestions erzeugt, dann führe Zeile 101 bis Zeile 105 neu aus.
@@ -171,11 +179,12 @@ document.getElementById("Submit").onclick = function () {
 //diese Funktion geht zur nächsten Frage wenn eine Nummer als Parameter kommt
 
 
-
 function nextQuestion(num) {
     if (newQuiz.currentQuestion >= 10) {
         document.getElementsByClassName("question-screen")[0].style.display = "none";
         document.getElementById("lastScreen").setAttribute("class", "final");
+        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct";
+        document.getElementById("playerpoints").style.display = "none";
     }
     else {
         document.getElementsByClassName("question-screen")[0].style.display = "block";
