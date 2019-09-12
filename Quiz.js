@@ -12,7 +12,7 @@ class NewQuiz {
                 b: "8 seasons",
                 c: "4 seasons",
                 d: "11 seasons",
-                answer: "8 seasons"
+                answer: "b"
             },
             {
                 q:
@@ -21,7 +21,7 @@ class NewQuiz {
                 b: "Remove Root",
                 c: "runas /user:administrator cmd",
                 d: "Halt and Catch Fire",
-                answer: "Halt and Catch Fire"
+                answer: "d"
             },
             {
                 q:
@@ -30,7 +30,7 @@ class NewQuiz {
                 b: "Central Perk",
                 c: "Central Café",
                 d: "The Central",
-                answer: "Central Perk"
+                answer: "b"
             },
             {
                 q:
@@ -39,7 +39,7 @@ class NewQuiz {
                 b: "'Winnetou' of Karl May ",
                 c: "A script of Gary Oldman",
                 d: "A project of HBO to initiate a Western revival",
-                answer: "The novels of Craig Johnson"
+                answer: "a"
             },
             {
                 q:
@@ -48,7 +48,7 @@ class NewQuiz {
                 b: "The Good Wife",
                 c: "House of Cards",
                 d: "Dark",
-                answer: "House of Cards"
+                answer: "c"
             },
             {
                 q:
@@ -57,7 +57,7 @@ class NewQuiz {
                 b: "Heisenberg",
                 c: "Weisskopf",
                 d: "Weizsäcker",
-                answer: "Heisenberg"
+                answer: "b"
             },
             {
                 q:
@@ -66,7 +66,7 @@ class NewQuiz {
                 b: "The excessive consumption of alcohol and cigarettes",
                 c: "The high number of nude scenes",
                 d: "Violation of animal rights",
-                answer: "the excessive consumption of alcohol and cigarettes"
+                answer: "b"
             },
             {
                 q:
@@ -75,7 +75,7 @@ class NewQuiz {
                 b: "Sabrina the Teenage Witch",
                 c: "Magic, Mystery & Sabrina",
                 d: "The Chilling Adventures of Sabrina",
-                answer: "The Chilling Adventures of Sabrina"
+                answer: "d"
             },
             {
                 q:
@@ -84,7 +84,7 @@ class NewQuiz {
                 b: "Dungeons and Dragons",
                 c: "Pokémon",
                 d: "Pac Man",
-                answer: "Dungeons and Dragons"
+                answer: "b"
             },
             {
                 q:
@@ -93,7 +93,7 @@ class NewQuiz {
                 b: "Jane Fonda",
                 c: "Andie MacDowell",
                 d: "Diane Keaton",
-                answer: "Diane Keaton"
+                answer: "d"
 
             }
         ]
@@ -132,14 +132,23 @@ document.getElementById("Start").onclick = function () {
 let liAnswers = document.getElementsByClassName("answering");
 let givenAnswer = "";                                                // muss außerhalb der Funktion erklärt werden, damit ich den gespeicherten Wert der Variable außerhalb abrufen kann.
 
-for (let i = 0; i < liAnswers.length; i++) {
+/*for (let i = 0; i < liAnswers.length; i++) {
     liAnswers[i].onclick = function (e) {
         console.log(e.currentTarget.innerHTML);
         console.log("liAnswers", liAnswers[1]);
         givenAnswer = e.currentTarget.innerHTML;
         console.log("gegebeneAntwort", givenAnswer);
     }
+}*/
+
+let radioButtons = document.getElementsByTagName ("input");
+
+for (let i = 0; i < radioButtons.length; i++) {
+    radioButtons[i].addEventListener("click", function (){
+        givenAnswer = radioButtons[i].value;
+    });
 }
+
 
 // Prüfung: ausgewählter Wert = oder != richtige Antwort >> nur Frage 1.
 // let givenAnswer = ""
