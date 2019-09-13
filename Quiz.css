@@ -131,12 +131,13 @@ input[type='radio'], label{
     margin-right: 60%;
 }
 #answeredquestions{
-    float: left;
+    
     background-color: #f0e6d7;
     width: 20px;
     height: 10px;
     margin-top: 80%;
     margin-right: 60%;
+    display: inline-block;    
 }
  /*
 h1 {

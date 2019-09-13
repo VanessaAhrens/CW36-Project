@@ -73,7 +73,7 @@ class NewQuiz {
                 c: "The high number of nude scenes",
                 d: "Violation of animal rights",
                 answer: "b",
-                image: "MadMen.gif"
+                image: "Mad Men.jpg"
             },
             {
                 q:
@@ -201,7 +201,7 @@ function nextQuestion(num) {
     if (newQuiz.currentQuestion >= 10) {
         document.getElementsByClassName("question-screen")[0].style.display = "none";
         document.getElementById("lastScreen").setAttribute("class", "final");
-        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct";
+        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct.";
         document.getElementById("playerpoints").style.display = "none";
         document.getElementById("answeredquestions").style.display = "none";
     }
