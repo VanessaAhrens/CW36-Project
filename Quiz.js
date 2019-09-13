@@ -125,7 +125,7 @@ document.getElementById("Start").onclick = function () {
     document.getElementById("Start").style.display = "none";
     console.log(document.getElementsByClassName("introduction"));
     myIntro[0].style.display = "none";
-}
+   }
 
 //Prüfung, ob der ausgewählte Wert mit richtiger Anwort übereinstimmt. Dafür erstmal Ausgabe des angeklickten Wertes, die in einer Variablen gespeichert sein soll. Keine Ahnung, ob das geht.See urgent Chapter Getting the current node object DOM Manipulation >> READ and WORK THROUGH//
 

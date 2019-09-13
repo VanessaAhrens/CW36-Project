@@ -1,3 +1,98 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: monospace;
+     }
+
+.notvisible {
+    visibility: hidden;
+}
+input[type='radio'], label{   
+    vertical-align: baseline;
+    padding: 10px;
+    margin: 10px;
+    }
+
+#navigation {
+    width: 100%;
+    height: 21%;
+    border-top-color: rgba(243, 222, 165, 0.8);
+    background-color: rgba(243, 222, 165, 0.8);
+    padding: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    }
+   
+.introduction {
+    background-image: url("background.png");
+    background-color: #e2dbc9;
+    width: 100%;
+    height: 100%;
+    background-attachment: auto;
+    margin-top: 11%;
+    position: fixed;
+    
+}
+#Start{
+    float: left;
+    font-family: monospace;
+    font-size: 20px;
+    color: #c34129;
+    margin-top: 15px;
+    margin-left: 25%;
+   }
+
+#welcome{
+    float: center;
+    margin-top: 20px;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-size: 25px;
+    color: #c34129;
+    }   
+
+.question-screen {
+    width: 100%;
+    height: 100%;
+    background-attachment: auto;
+    margin-top: 12%;
+    position: fixed;
+    font-size: 35px;
+    color: #c34129;
+    background-color: antiquewhite; 
+    z-index: -1;
+    padding-left: 60px;
+       }
+
+#Submit {
+    margin-top: 25%;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #c34129;
+    }
+
+.questions-all{
+    margin-right: 10%;
+}
+#answer1button {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#inbetweenScreen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    font-size: 35px;
+    color: #c34129;
+    background-color: antiquewhite; 
+    padding-left: 60px;
+    
+}
+ /*
 h1 {
     text-align: center;
     font-style: normal; 
@@ -6,6 +101,12 @@ h1 {
     color: #efb758;
   
 }
+.background {
+    background-image: url("background.png");
+    background-color: #e2dbc9;
+       width:100%;
+    height: 100%;
+ }
 #Start{
     float: left;
     font-family: monospace;
@@ -29,9 +130,11 @@ h1 {
     font-size: 20px;
     color: #c34129;
    }
-.invisibleSubmit {
+   */
+   .invisibleSubmit {
     visibility: hidden;
 }
+/*
 .introduction {
     background-color: #e2dbc9;;
     width: 600px;
@@ -42,15 +145,11 @@ h1 {
     font-size: 20px;
     color: #c34129
 }
-ul {
-    list-style-type: none;
-}
 .final {
     background-color: blanchedalmond;
-}
-.notvisible {
-    visibility: hidden;
-}
+} */
+
+/*
 .result {
     background-color: #e2dbc9;;
     width: 600px;
@@ -61,14 +160,6 @@ ul {
     font-size: 20px;
     color: #c34129
 }
-body {
-    background-image: url("background.png");
-    background-color: #e2dbc9;
-    background-size: auto;
-    width: 90%;
-    height: 50%;
-    margin:0 auto;
-    }
 #NextQuestion {
     float: left;
     font-family: monospace;
@@ -85,9 +176,35 @@ body {
     background-color: #e2dbc9;
     border-color: black;
     float: right;
-    }
-input[type='radio'], label{   
-   vertical-align: baseline;
-   padding: 10px;
-   margin: 10px;
+    } */
+
+/*
+/*Grundsetting
+
+ * {
+  margin:0;
+  padding:0;
+   font-family: monospace;
    }
+/*Überbau mit Titel
+
+   #navigation {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(250, 226, 190, 0,8);
+    margin-right:30px;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+   }
+
+   #banner {
+    width: 100%;
+    height: 100%;
+    z-index:0;
+    background-image: url("background.png");
+    background-color: #e2dbc9;
+    background-size: cover;
+   }
+*/
