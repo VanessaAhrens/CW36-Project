@@ -12,7 +12,8 @@ class NewQuiz {
                 b: "8 seasons",
                 c: "4 seasons",
                 d: "11 seasons",
-                answer: "b"
+                answer: "b",
+                image: "Game-of-thrones.jpg"
             },
             {
                 q:
@@ -21,7 +22,8 @@ class NewQuiz {
                 b: "Remove Root",
                 c: "runas /user:administrator cmd",
                 d: "Halt and Catch Fire",
-                answer: "d"
+                answer: "d",
+                image: "HCF.jpg"
             },
             {
                 q:
@@ -30,7 +32,8 @@ class NewQuiz {
                 b: "Central Perk",
                 c: "Central Café",
                 d: "The Central",
-                answer: "b"
+                answer: "b",
+                image: "Friends.gif"
             },
             {
                 q:
@@ -39,7 +42,8 @@ class NewQuiz {
                 b: "'Winnetou' of Karl May ",
                 c: "A script of Gary Oldman",
                 d: "A project of HBO to initiate a Western revival",
-                answer: "a"
+                answer: "a",
+                image: "Longmire.gif"
             },
             {
                 q:
@@ -48,7 +52,8 @@ class NewQuiz {
                 b: "The Good Wife",
                 c: "House of Cards",
                 d: "Dark",
-                answer: "c"
+                answer: "c",
+                image: "House of Cards.gif"
             },
             {
                 q:
@@ -57,7 +62,8 @@ class NewQuiz {
                 b: "Heisenberg",
                 c: "Weisskopf",
                 d: "Weizsäcker",
-                answer: "b"
+                answer: "b",
+                image: "BreakingBad.jpg"
             },
             {
                 q:
@@ -66,7 +72,8 @@ class NewQuiz {
                 b: "The excessive consumption of alcohol and cigarettes",
                 c: "The high number of nude scenes",
                 d: "Violation of animal rights",
-                answer: "b"
+                answer: "b",
+                image: "MadMen.gif"
             },
             {
                 q:
@@ -75,7 +82,8 @@ class NewQuiz {
                 b: "Sabrina the Teenage Witch",
                 c: "Magic, Mystery & Sabrina",
                 d: "The Chilling Adventures of Sabrina",
-                answer: "d"
+                answer: "d",
+                image: "Sabrina.jpg"
             },
             {
                 q:
@@ -84,7 +92,8 @@ class NewQuiz {
                 b: "Dungeons and Dragons",
                 c: "Pokémon",
                 d: "Pac Man",
-                answer: "b"
+                answer: "b",
+                image: "Stranger-things.gif"
             },
             {
                 q:
@@ -93,7 +102,8 @@ class NewQuiz {
                 b: "Jane Fonda",
                 c: "Andie MacDowell",
                 d: "Diane Keaton",
-                answer: "d"
+                answer: "d",
+                image: "The young Pope.jpg"
 
             }
         ]
@@ -125,6 +135,7 @@ document.getElementById("Start").onclick = function () {
     document.getElementById("Start").style.display = "none";
     console.log(document.getElementsByClassName("introduction"));
     myIntro[0].style.display = "none";
+    document.getElementsByTagName("img")[0].setAttribute("src", newQuiz.questions[0].image);
    }
 
 //Prüfung, ob der ausgewählte Wert mit richtiger Anwort übereinstimmt. Dafür erstmal Ausgabe des angeklickten Wertes, die in einer Variablen gespeichert sein soll. Keine Ahnung, ob das geht.See urgent Chapter Getting the current node object DOM Manipulation >> READ and WORK THROUGH//
@@ -175,6 +186,7 @@ document.getElementById("Submit").onclick = function () {
     document.getElementById("answeredquestions").style.display = "block"; // 09.09.2019 nur sichtbar ab 1. Submit + style setting in html
     document.getElementById("playerpoints").innerHTML = newQuiz.playerPoints;   // mit der Einführung des Zwischenergebnis
     document.getElementById("playerpoints").style.display = "block";
+    document.getElementsByTagName("img")[0].setAttribute("src", newQuiz.questions[newQuiz.currentQuestion].image);  
    
 }
 
