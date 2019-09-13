@@ -16,8 +16,9 @@ input[type='radio'], label{
 #navigation {
     width: 100%;
     height: 21%;
-    border-top-color: rgba(243, 222, 165, 0.8);
-    background-color: rgba(243, 222, 165, 0.8);
+    border-top-color: #213058;
+    background-color: #213058;
+    color: #F0E6D7;
     padding: 20px;
     font-weight: 700;
     font-size: 40px;
@@ -28,7 +29,7 @@ input[type='radio'], label{
    
 .introduction {
     background-image: url("background.png");
-    background-color: #e2dbc9;
+    background-color: #F0E6D7;
     width: 100%;
     height: 100%;
     background-attachment: auto;
@@ -39,10 +40,11 @@ input[type='radio'], label{
 #Start{
     float: left;
     font-family: monospace;
-    font-size: 20px;
-    color: #c34129;
-    margin-top: 15px;
+    font-size: 30px;
+    color: #213058;
+    margin-top: 30px;
     margin-left: 25%;
+    background-color: #F4AE3F;
    }
 
 #welcome{
@@ -57,22 +59,25 @@ input[type='radio'], label{
 .question-screen {
     width: 100%;
     height: 100%;
+    padding: 30px;
+    
     background-attachment: auto;
     margin-top: 140px;
     position: fixed;
     font-size: 35px;
     color: #c34129;
-    background-color: antiquewhite; 
+    background-color: #F0E6D7; 
     padding-left: 60px;
-       }
+    }
 
 #Submit {
     margin-top: 70px;
     margin-left: 50px;
     display:block;
     position: fixed;
-    font-size: 20px;
-    color: #c34129;
+    font-size: 35px;
+    background-color: #F4AE3F;
+    color:#213058;
     }
 
 .questions-all{
@@ -87,13 +92,51 @@ input[type='radio'], label{
     width: 100%;
     height: 100%;
     margin-top: 140px;
+    padding: 30px;
     background-attachment: auto;
     position: fixed;
     font-size: 35px;
     color: #c34129;
-    background-color: antiquewhite; 
+    background-color:#F0E6D7; 
     padding-left: 60px;
-    
+}
+#lastScreen {
+    width: 100%;
+    height: 100%;
+    margin-top: 140px;
+    padding: 30px;
+    background-attachment: auto;
+    position: fixed;
+    font-size: 35px;
+    color: #c34129;
+    background-color: #F0E6D7; 
+    padding-left: 60px;
+    background-image: url("Sopranos.gif");
+}
+#NextQuestion{
+    float: right;
+    font-family: monospace;
+    font-size: 35px;
+    color: #213058;
+    margin-top: 15px;
+    margin-right: 60%;
+    background-color: #F4AE3F;
+   }
+#playerpoints{
+    float: left;
+    background-color: #f0e6d7;
+    width: 20px;
+    height: 10px;
+    margin-top: 80%;
+    margin-right: 60%;
+}
+#answeredquestions{
+    float: left;
+    background-color: #f0e6d7;
+    width: 20px;
+    height: 10px;
+    margin-top: 80%;
+    margin-right: 60%;
 }
  /*
 h1 {

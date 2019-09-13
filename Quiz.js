@@ -23,7 +23,7 @@ class NewQuiz {
                 c: "runas /user:administrator cmd",
                 d: "Halt and Catch Fire",
                 answer: "d",
-                image: "HCF.jpg"
+                image: "HCF 2.jpg"
             },
             {
                 q:
@@ -57,7 +57,7 @@ class NewQuiz {
             },
             {
                 q:
-                    "Question 6: What is the drug kingpin alias of chemistry teacher Walter White in 'Breaking Bad' ",
+                    "Question 6: What is the drug kingpin alias of chemistry teacher Walter White in 'Breaking Bad'?",
                 a: "Bohr",
                 b: "Heisenberg",
                 c: "Weisskopf",
@@ -186,7 +186,7 @@ document.getElementById("Submit").onclick = function () {
     document.getElementById("answeredquestions").style.display = "block"; // 09.09.2019 nur sichtbar ab 1. Submit + style setting in html
     document.getElementById("playerpoints").innerHTML = newQuiz.playerPoints;   // mit der Einführung des Zwischenergebnis
     document.getElementById("playerpoints").style.display = "block";
-    document.getElementsByTagName("img")[0].setAttribute("src", newQuiz.questions[newQuiz.currentQuestion].image);  
+    document.getElementsByTagName("img")[0].setAttribute("src", newQuiz.questions[newQuiz.currentQuestion-1].image);  
    
 }
 
