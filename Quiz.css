@@ -124,13 +124,13 @@ input[type='radio'], label{
    }
 #playerpoints{
     background-color: #f0e6d7;
-    border-right-color: #F0E6D7;
+    border-style: hidden;
     text-align: center;
     color: #28696A;
     margin-top: 20px;
     margin-left: 90%;
     width: 120px;
-    height: 12%;
+    height: 13%;
     font-weight: 700;
     font-size: 30px;
     position: fixed;
@@ -148,8 +148,8 @@ input[type='radio'], label{
     height: 45px;
     position:fixed;
     margin-left: 40%;
-    margin-top: 43%;
-    margin-right: 50%;
+    margin-top: 50%;
+    margin-right: 30%;
     position: fixed;
     font-size: 35px;
 }

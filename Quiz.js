@@ -184,7 +184,7 @@ document.getElementById("Submit").onclick = function () {
     document.getElementById("inbetweenScreen").style.display = "block";
     document.getElementById("answeredquestions").innerHTML =10- newQuiz.currentQuestion + " Questions to go"; //09.09.2019 füge "answeredquestions" button ein Zähler Frage hinzu
     document.getElementById("answeredquestions").style.display = "block"; // 09.09.2019 nur sichtbar ab 1. Submit + style setting in html
-    document.getElementById("playerpoints").innerHTML = newQuiz.playerPoints + " points";   // mit der Einführung des Zwischenergebnis
+    document.getElementById("playerpoints").innerHTML =  " Total points: "+newQuiz.playerPoints;   // mit der Einführung des Zwischenergebnis
     document.getElementById("playerpoints").style.display = "block";
     document.getElementsByTagName("img")[0].setAttribute("src", newQuiz.questions[newQuiz.currentQuestion-1].image);  
    
