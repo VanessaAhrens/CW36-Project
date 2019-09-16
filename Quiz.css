@@ -45,7 +45,16 @@ input[type='radio'], label{
     margin-top: 30px;
     margin-left: 25%;
     background-color: #F4AE3F;
+    border-style: hidden;
    }
+
+#Start:hover {
+    color:   #F0E6D7;
+}
+
+#Submit:hover {
+    color:  #F0E6D7;
+}
 
 #welcome{
     float: center;
@@ -78,6 +87,7 @@ input[type='radio'], label{
     font-size: 35px;
     background-color: #F4AE3F;
     color:#213058;
+    border-style: hidden;
     }
 
 .questions-all{
@@ -107,7 +117,7 @@ input[type='radio'], label{
     padding: 30px;
     background-attachment: auto;
     position: fixed;
-    font-size: 35px;
+    font-size: 50px;
     color: #c34129;
     background-color: #F0E6D7; 
     padding-left: 60px;
@@ -121,7 +131,11 @@ input[type='radio'], label{
     margin-top: 23px;
     margin-right: 60%;
     background-color: #F4AE3F;
+    border-style: hidden;
    }
+#NextQuestion:hover {
+    color:  #F0E6D7;
+}
 #playerpoints{
     background-color: #f0e6d7;
     border-style: hidden;
