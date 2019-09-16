@@ -118,26 +118,40 @@ input[type='radio'], label{
     font-family: monospace;
     font-size: 35px;
     color: #213058;
-    margin-top: 15px;
+    margin-top: 23px;
     margin-right: 60%;
     background-color: #F4AE3F;
    }
 #playerpoints{
-    float: left;
     background-color: #f0e6d7;
-    width: 20px;
-    height: 10px;
-    margin-top: 80%;
-    margin-right: 60%;
+    border-right-color: #F0E6D7;
+    text-align: center;
+    color: #28696A;
+    margin-top: 20px;
+    margin-left: 90%;
+    width: 120px;
+    height: 12%;
+    font-weight: 700;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
 }
+/* in den Footer und Buttons starr positionieren. */
 #answeredquestions{
     
-    background-color: #f0e6d7;
-    width: 20px;
-    height: 10px;
-    margin-top: 80%;
-    margin-right: 60%;
-    display: inline-block;    
+    background-color:  #F0E6D7;
+    border-style: hidden;
+    color: #213058;
+    font-size: 40px;
+    font-family: monospace;
+    width: 400px;
+    height: 45px;
+    position:fixed;
+    margin-left: 40%;
+    margin-top: 43%;
+    margin-right: 50%;
+    position: fixed;
+    font-size: 35px;
 }
  /*
 h1 {
