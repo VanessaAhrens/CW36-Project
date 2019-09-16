@@ -198,12 +198,26 @@ document.getElementById("Submit").onclick = function () {
 
 
 function nextQuestion(num) {
-    if (newQuiz.currentQuestion >= 10) {
+    if (newQuiz.currentQuestion >= 10 && newQuiz.playerPoints >= 8) {
         document.getElementsByClassName("question-screen")[0].style.display = "none";
         document.getElementById("lastScreen").setAttribute("class", "final");
         document.getElementById("playerpoints").style.display = "none";
         document.getElementById("answeredquestions").style.display = "none";
-        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct.";
+        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct. You´re addicted.";
+    }
+    else if(newQuiz.currentQuestion >= 10 && newQuiz.playerPoints >= 6 && newQuiz.playerPoints < 8 ){
+        document.getElementsByClassName("question-screen")[0].style.display = "none";
+        document.getElementById("lastScreen").setAttribute("class", "final");
+        document.getElementById("playerpoints").style.display = "none";
+        document.getElementById("answeredquestions").style.display = "none";
+        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct. You´re advanced.";
+    }
+    else if(newQuiz.currentQuestion >= 10 && newQuiz.playerPoints < 6 ){
+        document.getElementsByClassName("question-screen")[0].style.display = "none";
+        document.getElementById("lastScreen").setAttribute("class", "final");
+        document.getElementById("playerpoints").style.display = "none";
+        document.getElementById("answeredquestions").style.display = "none";
+        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct. You´re a beginner.";
     }
     else {
         document.getElementsByClassName("question-screen")[0].style.display = "block";
@@ -214,30 +228,6 @@ function nextQuestion(num) {
         document.getElementById("answer4").innerHTML = newQuiz.questions[num].d;
     }
 }
-// function nextQuestion(num) {
-//    if (newQuiz.currentQuestion>=10 && newQuiz.playerPoints >= 8) {
-//        document.getElementsByClassName("question-screen")[0].style.display = "none";
-//        document.getElementById("lastScreen").setAttribute("class", "final");
-//        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct. You are addicted!";
-//        document.getElementById("playerpoints").style.display = "none";
-//        document.getElementById("answeredquestions").style.display = "none";
-//     if (newQuiz.currentQuestion>=10 && newQuiz.playerPoints >= 6) {
-    //        document.getElementsByClassName("question-screen")[0].style.display = "none";
-    //        document.getElementById("lastScreen").setAttribute("class", "final");
-    //        document.getElementById("lastScreen").innerHTML = "You answered "+newQuiz.playerPoints+" questions correct. You are advanced!";
-    //        document.getElementById("playerpoints").style.display = "none";
-    //        document.getElementById("answeredquestions").style.display = "none";
-//else {
-//    document.getElementsByClassName("question-screen")[0].style.display = "block";
-//    document.getElementsByClassName("questions-all")[0].innerHTML = newQuiz.questions[num].q;
-//    document.getElementById("answer1").innerHTML = newQuiz.questions[num].a;
-//    document.getElementById("answer2").innerHTML = newQuiz.questions[num].b;
-//    document.getElementById("answer3").innerHTML = newQuiz.questions[num].c;
-//    document.getElementById("answer4").innerHTML = newQuiz.questions[num].d;
-//}
-//}
-
-
 document.getElementById("NextQuestion").onclick = function () {
     document.getElementById("inbetweenScreen").style.display = "none";
     nextQuestion(newQuiz.currentQuestion);
